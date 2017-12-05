@@ -1,0 +1,12 @@
+ /* 
+ * @Author: nooldey 
+ * @Author-Email: <nooldey@gmail.com> 
+ * @Date: 2017-11-23 17:00:30 
+ * @Last Modified by: nooldey
+ * @Last Modified time: 2017-11-23 17:01:05
+ * @Description: css-mixin
+ */
+
+@mixin box_shadow($px: 6) {
+    box-shadow: 0 1px #{$px}px 0 rgba(0,0,0,.1);
+}

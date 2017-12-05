@@ -1,0 +1,32 @@
+ /* 
+ * @Author: nooldey 
+ * @Author-Email: <nooldey@gmail.com> 
+ * @Date: 2017-11-23 17:01:14 
+ * @Last Modified by: nooldey
+ * @Last Modified time: 2017-11-24 17:20:17
+ * @Description: 全站加载样式
+ */
+@import './base/reset','./base/mixin';
+
+/* custom ui style */
+.ui-scrollbar {
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #bbb;
+    }
+}
+
+/* site style */
+
+.layout {
+    padding: 35px;
+    font-size: 36px;
+    text-align: center;
+    color: #666;
+}

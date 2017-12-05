@@ -1,0 +1,63 @@
+{
+  "name": "vue-admin-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Nooldey",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run pop && cross-env NODE_ENV=production webpack --config build/webpack.prod.js --progress --color --hide-modules",
+    "dev": "node build/dev-server",
+    "pop": "rimraf dist/*"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-component": "^0.10.1",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "connect-history-api-fallback": "^1.5.0",
+    "copy-webpack-plugin": "^4.2.1",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.7",
+    "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^0.11.2",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "html-webpack-plugin": "^2.30.1",
+    "http-proxy-middleware": "^0.17.4",
+    "node-sass": "^4.7.2",
+    "opn": "^5.1.0",
+    "optimize-css-assets-webpack-plugin": "^3.2.0",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^6.0.6",
+    "url-loader": "^0.5.9",
+    "vue-loader": "^13.5.0",
+    "vue-style-loader": "^3.0.3",
+    "vue-template-compiler": "^2.5.8",
+    "webpack": "^3.8.1",
+    "webpack-bundle-analyzer": "^2.9.1",
+    "webpack-dev-middleware": "^1.12.1",
+    "webpack-hot-middleware": "^2.20.0",
+    "webpack-merge": "^4.1.1",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "element-ui": "^2.0.5",
+    "imports-loader": "^0.7.1",
+    "moment": "^2.19.2",
+    "snapsvg": "^0.5.1",
+    "vue": "^2.5.8",
+    "vue-router": "^2.8.1",
+    "vuex": "^2.5.0"
+  },
+  "browserslist": "last 2 versions, safari >= 9",
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

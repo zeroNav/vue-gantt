@@ -1,0 +1,75 @@
+ /* 
+ * @Author: nooldey 
+ * @Author-Email: <nooldey@gmail.com> 
+ * @Date: 2017-11-23 16:59:29 
+ * @Last Modified by:   nooldey 
+ * @Last Modified time: 2017-11-23 16:59:29 
+ * @Description: 基础样式
+ */
+
+@import './const';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: break-all;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-width: $min_width;
+    margin: 0;
+    font-size: 14px;
+    font-family: -apple-system, SF UI Display,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+    background: $bg_color;
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img, button {
+    border: none;
+    outline: none;
+}
+
+button {
+    font-size: 14px;
+}
+
+input, textarea {
+    font-size: 14px;
+    font-family: -apple-system, SF UI Display,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+    outline: none;
+    resize: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none!important;
+        margin: 0;
+    }
+}
+
+input[type=password] {
+    &::-ms-reveal { display: none; }
+}

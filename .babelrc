@@ -1,0 +1,35 @@
+{
+	"presets": [
+		[
+			"env",
+			{
+				"targets": {
+					"browsers": [
+						"last 2 versions",
+						"safari >= 9"
+					]
+				},
+				"modules": false,
+				"useBuiltIns": true
+			}
+		],
+		"stage-1"
+	],
+	"plugins": [
+		"syntax-dynamic-import",
+		[
+			"transform-runtime",
+			{
+				"helpers": false,
+				"moduleName": "babel-runtime"
+			}
+		],
+		[
+			"component",
+			{
+				"libraryName": "element-ui",
+				"styleLibraryName": "theme-chalk"
+			}
+		]
+	]
+}

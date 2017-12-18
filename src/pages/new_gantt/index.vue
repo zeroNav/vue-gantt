@@ -18,11 +18,16 @@
             return {
                 tasks: {
                     data: [
-                        {id: 1, text: 'Task #1', start_date: '15-04-2017', duration: 3, progress: 0.6},
-                        {id: 2, text: 'Task #2', start_date: '18-11-2017', duration: 3, progress: 0.4}
+                        {id: 1, text: 'Task #1', start_date: '15-10-2017', duration: 10, progress: 0.6},
+                        {id: 4, text: 'Task #4', start_date: '20-12-2017', duration: 30, progress: 0.7},
+                        {id: 2, text: 'Task #2', start_date: '18-11-2017', duration: 3, progress: 0.4},
+                        {id: 5, text: 'Task #6', start_date: '22-12-2017', duration: 30, progress: 0.6},
+                        {id: 3, text: 'Task #3', start_date: '18-12-2017', duration: 30, progress: 0.8},
                     ],
                     links: [
-                        {id: 1, source: 1, target: 2, type: '0'}
+                        {id: 1, source: 1, target: 2, type: '0'},
+                        {id: 2, source: 1, target: 3, type: '1'},
+                        {id: 5, source: 1, target: 4, type: '1'},
                     ]
                 },
                 selectedTask: null,

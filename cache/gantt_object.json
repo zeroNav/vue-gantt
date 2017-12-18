@@ -1,0 +1,415 @@
+{
+    "version": "5.0.5",
+    "templates": {},
+    "keys": {
+        "edit_save": 13,
+        "edit_cancel": 27
+    },
+    "$services": {
+        "services": {
+            "config": "config",
+            "templates": "templates",
+            "locale": "locale"
+        }
+    },
+    "config": {
+        "layout": {
+            "css": "gantt_container",
+            "rows": [{
+                "cols": [{
+                    "view": "grid",
+                    "id": "grid",
+                    "scrollX": "scrollHor",
+                    "scrollY": "scrollVer"
+                }, {
+                    "resizer": true,
+                    "width": 1
+                }, {
+                    "view": "timeline",
+                    "id": "timeline",
+                    "scrollX": "scrollHor",
+                    "scrollY": "scrollVer"
+                }, {
+                    "view": "scrollbar",
+                    "scroll": "y",
+                    "id": "scrollVer"
+                }]
+            }, {
+                "view": "scrollbar",
+                "scroll": "x",
+                "id": "scrollHor",
+                "height": 20
+            }]
+        },
+        "links": {
+            "finish_to_start": "0",
+            "start_to_start": "1",
+            "finish_to_finish": "2",
+            "start_to_finish": "3"
+        },
+        "types": {
+            "task": "task",
+            "project": "project",
+            "milestone": "milestone"
+        },
+        "duration_unit": "day",
+        "work_time": false,
+        "correct_work_time": false,
+        "skip_off_time": false,
+        "cascade_delete": true,
+        "autosize": false,
+        "autosize_min_width": 0,
+        "autoscroll": true,
+        "autoscroll_speed": 30,
+        "show_links": true,
+        "show_task_cells": true,
+        "static_background": false,
+        "branch_loading": false,
+        "show_loading": false,
+        "show_chart": true,
+        "show_grid": true,
+        "min_duration": 3600000,
+        "xml_date": "%d-%m-%Y %H:%i",
+        "api_date": "%d-%m-%Y %H:%i",
+        "start_on_monday": true,
+        "server_utc": false,
+        "show_progress": true,
+        "fit_tasks": false,
+        "select_task": true,
+        "scroll_on_click": true,
+        "preserve_scroll": true,
+        "readonly": false,
+        "date_grid": "%Y-%m-%d",
+        "drag_links": true,
+        "drag_progress": true,
+        "drag_resize": true,
+        "drag_move": true,
+        "drag_mode": {
+            "resize": "resize",
+            "progress": "progress",
+            "move": "move",
+            "ignore": "ignore"
+        },
+        "round_dnd_dates": true,
+        "link_wrapper_width": 20,
+        "root_id": 0,
+        "autofit": false,
+        "columns": [{
+            "name": "text",
+            "tree": true,
+            "width": "*",
+            "resize": true
+        }, {
+            "name": "start_date",
+            "align": "center",
+            "resize": true
+        }, {
+            "name": "duration",
+            "align": "center"
+        }, {
+            "name": "add",
+            "width": "44"
+        }],
+        "step": 1,
+        "scale_unit": "day",
+        "scale_offset_minimal": true,
+        "subscales": [],
+        "inherit_scale_class": false,
+        "time_step": 60,
+        "duration_step": 1,
+        "date_scale": "%d %M",
+        "task_date": "%d %F %Y",
+        "time_picker": "%H:%i",
+        "task_attribute": "task_id",
+        "link_attribute": "link_id",
+        "layer_attribute": "data-layer",
+        "buttons_left": ["gantt_save_btn", "gantt_cancel_btn"],
+        "_migrate_buttons": {
+            "dhx_save_btn": "gantt_save_btn",
+            "dhx_cancel_btn": "gantt_cancel_btn",
+            "dhx_delete_btn": "gantt_delete_btn"
+        },
+        "buttons_right": ["gantt_delete_btn"],
+        "lightbox": {
+            "sections": [{
+                "name": "description",
+                "height": 70,
+                "map_to": "text",
+                "type": "textarea",
+                "focus": true
+            }, {
+                "name": "time",
+                "type": "duration",
+                "map_to": "auto"
+            }],
+            "project_sections": [{
+                "name": "description",
+                "height": 70,
+                "map_to": "text",
+                "type": "textarea",
+                "focus": true
+            }, {
+                "name": "type",
+                "type": "typeselect",
+                "map_to": "type"
+            }, {
+                "name": "time",
+                "type": "duration",
+                "readonly": true,
+                "map_to": "auto"
+            }],
+            "milestone_sections": [{
+                "name": "description",
+                "height": 70,
+                "map_to": "text",
+                "type": "textarea",
+                "focus": true
+            }, {
+                "name": "type",
+                "type": "typeselect",
+                "map_to": "type"
+            }, {
+                "name": "time",
+                "type": "duration",
+                "single_date": true,
+                "map_to": "auto"
+            }]
+        },
+        "drag_lightbox": true,
+        "sort": false,
+        "details_on_create": true,
+        "details_on_dblclick": true,
+        "initial_scroll": true,
+        "task_scroll_offset": 100,
+        "order_branch": false,
+        "order_branch_free": false,
+        "task_height": "full",
+        "min_column_width": 70,
+        "min_grid_column_width": 70,
+        "grid_resizer_column_attribute": "column_index",
+        "grid_resizer_attribute": "grid_resizer",
+        "keep_grid_width": false,
+        "grid_resize": false,
+        "show_unscheduled": true,
+        "readonly_property": "readonly",
+        "editable_property": "editable",
+        "calendar_property": "calendar_id",
+        "resource_calendars": {},
+        "type_renderers": {},
+        "open_tree_initially": false,
+        "optimize_render": true,
+        "prevent_default_scroll": false,
+        "show_errors": true,
+        "wai_aria_attributes": true,
+        "smart_scales": true,
+        "touch_drag": 500,
+        "touch": true,
+        "touch_feedback": true,
+        "touch_feedback_duration": 1
+    },
+    "ajax": {
+        "cache": true,
+        "method": "get"
+    },
+    "date": {},
+    "env": {
+        "isIE": false,
+        "isIE6": false,
+        "isIE7": false,
+        "isIE8": false,
+        "isOpera": false,
+        "isChrome": true,
+        "isKHTML": true,
+        "isFF": false,
+        "isIPad": false,
+        "isEdge": false
+    },
+    "$ui": {
+        "layers": {}
+    },
+    "$mouseEvents": {},
+    "$data": {
+        "tasksStore": {
+            "_branches": {},
+            "pull": {},
+            "$parentProperty": "parent",
+            "$rootId": 0,
+            "visibleOrder": [],
+            "fullOrder": [],
+            "_searchVisibleOrder": {},
+            "_skip_refresh": false,
+            "_filterRule": null
+        },
+        "linksStore": {
+            "pull": {},
+            "visibleOrder": [],
+            "fullOrder": [],
+            "_skip_refresh": false,
+            "_filterRule": null,
+            "_searchVisibleOrder": {}
+        }
+    },
+    "_waiAria": {},
+    "json": {},
+    "xml": {},
+    "oldxml": {},
+    "_lightbox_methods": {},
+    "_lightbox_template": "<div class='gantt_cal_ltitle'><span class='gantt_mark'>&nbsp;</span><span class='gantt_time'></span><span class='gantt_title'></span></div><div class='gantt_cal_larea'></div>",
+    "form_blocks": {
+        "template": {},
+        "textarea": {},
+        "select": {},
+        "time": {},
+        "duration": {},
+        "parent": {},
+        "duration_optional": {},
+        "time_optional": {}
+    },
+    "_cached_functions": {
+        "cache": {},
+        "mode": false,
+        "critical_path_mode": false
+    },
+    "skins": {
+        "skyblue": {
+            "config": {
+                "grid_width": 350,
+                "row_height": 27,
+                "scale_height": 27,
+                "link_line_width": 1,
+                "link_arrow_size": 8,
+                "lightbox_additional_height": 75
+            },
+            "_second_column_width": 95,
+            "_third_column_width": 80
+        },
+        "meadow": {
+            "config": {
+                "grid_width": 350,
+                "row_height": 27,
+                "scale_height": 30,
+                "link_line_width": 2,
+                "link_arrow_size": 6,
+                "lightbox_additional_height": 72
+            },
+            "_second_column_width": 95,
+            "_third_column_width": 80
+        },
+        "terrace": {
+            "config": {
+                "grid_width": 360,
+                "row_height": 35,
+                "scale_height": 35,
+                "link_line_width": 2,
+                "link_arrow_size": 6,
+                "lightbox_additional_height": 75
+            },
+            "_second_column_width": 90,
+            "_third_column_width": 70
+        },
+        "broadway": {
+            "config": {
+                "grid_width": 360,
+                "row_height": 35,
+                "scale_height": 35,
+                "link_line_width": 1,
+                "link_arrow_size": 7,
+                "lightbox_additional_height": 86
+            },
+            "_second_column_width": 90,
+            "_third_column_width": 80,
+            "_lightbox_template": "<div class='gantt_cal_ltitle'><span class='gantt_mark'>&nbsp;</span><span class='gantt_time'></span><span class='gantt_title'></span><div class='gantt_cancel_btn'></div></div><div class='gantt_cal_larea'></div>",
+            "_config_buttons_left": {},
+            "_config_buttons_right": {
+                "gantt_delete_btn": "icon_delete",
+                "gantt_save_btn": "icon_save"
+            }
+        },
+        "material": {
+            "config": {
+                "grid_width": 411,
+                "row_height": 34,
+                "task_height_offset": 6,
+                "scale_height": 36,
+                "link_line_width": 2,
+                "link_arrow_size": 6,
+                "lightbox_additional_height": 80
+            },
+            "_second_column_width": 110,
+            "_third_column_width": 75,
+            "_redefine_lightbox_buttons": {
+                "buttons_left": ["dhx_delete_btn"],
+                "buttons_right": ["dhx_save_btn", "dhx_cancel_btn"]
+            }
+        },
+        "contrast_black": {
+            "config": {
+                "grid_width": 360,
+                "row_height": 35,
+                "scale_height": 35,
+                "link_line_width": 2,
+                "link_arrow_size": 6,
+                "lightbox_additional_height": 75
+            },
+            "_second_column_width": 100,
+            "_third_column_width": 80
+        },
+        "contrast_white": {
+            "config": {
+                "grid_width": 360,
+                "row_height": 35,
+                "scale_height": 35,
+                "link_line_width": 2,
+                "link_arrow_size": 6,
+                "lightbox_additional_height": 75
+            },
+            "_second_column_width": 100,
+            "_third_column_width": 80
+        }
+    },
+    "_prevent_touch_scroll": false,
+    "locale": {
+        "date": {
+            "month_full": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            "month_short": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            "day_full": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "day_short": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+        },
+        "labels": {
+            "new_task": "New task",
+            "icon_save": "Save",
+            "icon_cancel": "Cancel",
+            "icon_details": "Details",
+            "icon_edit": "Edit",
+            "icon_delete": "Delete",
+            "confirm_closing": "",
+            "confirm_deleting": "Task will be deleted permanently, are you sure?",
+            "section_description": "Description",
+            "section_time": "Time period",
+            "section_type": "Type",
+            "column_wbs": "WBS",
+            "column_text": "Task name",
+            "column_start_date": "Start time",
+            "column_duration": "Duration",
+            "column_add": "",
+            "link": "Link",
+            "confirm_link_deleting": "will be deleted",
+            "link_start": " (start)",
+            "link_end": " (end)",
+            "type_task": "Task",
+            "type_project": "Project",
+            "type_milestone": "Milestone",
+            "minutes": "Minutes",
+            "hours": "Hours",
+            "days": "Days",
+            "weeks": "Week",
+            "months": "Months",
+            "years": "Years",
+            "message_ok": "OK",
+            "message_cancel": "Cancel"
+        }
+    },
+    "$click": {
+        "buttons": {}
+    }
+}

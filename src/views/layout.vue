@@ -23,7 +23,7 @@
  * @Author-Email: <nooldey@gmail.com> 
  * @Date: 2017-11-24 16:46:23 
  * @Last Modified by: nooldey
- * @Last Modified time: 2017-12-18 16:45:20
+ * @Last Modified time: 2017-12-18 18:57:29
  * @Description: 纯vue无框架导航布局
  */
 export default {
@@ -38,6 +38,7 @@ export default {
 <style lang="scss" scoped>
     nav {
         margin-bottom: 35px;
+        text-align: center;
         border-bottom: 1px solid #ccc;
         a {
             display: inline-block;

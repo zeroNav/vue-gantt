@@ -5,7 +5,7 @@
   "author": "Nooldey",
   "license": "MIT",
   "scripts": {
-    "start": "npm run pop && cross-env NODE_ENV=production webpack --config build/webpack.prod.js --progress --color --hide-modules",
+    "build": "npm run pop && cross-env NODE_ENV=production webpack --config build/webpack.prod.js --progress --color --hide-modules",
     "dev": "node build/dev-server",
     "pop": "rimraf dist/*"
   },
@@ -46,6 +46,7 @@
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
+    "dhtmlx-gantt": "^5.0.5",
     "imports-loader": "^0.7.1",
     "moment": "^2.19.2",
     "snapsvg": "^0.5.1",

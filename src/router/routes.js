@@ -3,7 +3,7 @@
  * @Author-Email: <nooldey@gmail.com> 
  * @Date: 2017-11-23 17:20:27 
  * @Last Modified by: nooldey
- * @Last Modified time: 2017-12-18 16:48:08
+ * @Last Modified time: 2017-12-18 16:51:53
  * @Description: 具体的路由定义
  */
 
@@ -20,7 +20,12 @@ export default [
             {
                 path: 'gantt',
                 name: '甘特图范例',
-                component: pipe('z_gantt/index')
+                component: pipe('gantt/index')
+            },
+            {
+                path: 'mygantt',
+                name: '甘特图组件',
+                component: pipe('vue_gantt/index')
             },
             {
                 path: '404',

@@ -23,13 +23,6 @@
 				"helpers": false,
 				"moduleName": "babel-runtime"
 			}
-		],
-		[
-			"component",
-			{
-				"libraryName": "element-ui",
-				"styleLibraryName": "theme-chalk"
-			}
 		]
 	]
 }

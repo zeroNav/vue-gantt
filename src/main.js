@@ -10,16 +10,14 @@
 /* 修复低版本浏览器对BABEL语法的兼容 */
 import 'babel-polyfill'
 import Vue from 'vue'
-import store from './store'
 import router from './router'
 import App from './views/app'
 import initial from './utils/initial'
 
-Vue.use(initial, { store, router })
+Vue.use(initial, { router })
 
 new Vue({
     el: '#app',
     router,
-    store,
     render: h => h(App)
 })

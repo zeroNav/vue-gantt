@@ -13,7 +13,6 @@
     "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
-    "babel-plugin-component": "^0.10.1",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
@@ -47,8 +46,6 @@
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
-    "axios": "^0.16.2",
-    "element-ui": "^2.0.5",
     "imports-loader": "^0.7.1",
     "moment": "^2.19.2",
     "snapsvg": "^0.5.1",

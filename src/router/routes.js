@@ -3,7 +3,7 @@
  * @Author-Email: <nooldey@gmail.com> 
  * @Date: 2017-11-23 17:20:27 
  * @Last Modified by: nooldey
- * @Last Modified time: 2017-12-18 17:55:19
+ * @Last Modified time: 2017-12-19 09:17:23
  * @Description: 具体的路由定义
  */
 
@@ -29,7 +29,7 @@ export default [
             },
             {
                 path: 'mygantt',
-                name: '甘特图组件',
+                name: '甘特图自定义组件',
                 component: pipe('new_gantt/index')
             },
             {

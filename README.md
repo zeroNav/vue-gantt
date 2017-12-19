@@ -9,6 +9,8 @@ vuejs下的甘特图范例
 
 https://docs.dhtmlx.com/gantt/desktop__configuring_time_scale.html
 
+https://github.com/DHTMLX/vue-gantt-demo
+
 `/mygantt`: 基于以上组件，整合而成的甘特图.
 
 ### TODO

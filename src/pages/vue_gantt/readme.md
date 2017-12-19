@@ -1,1 +1,0 @@
-## an origin vue component for gantt from https://github.com/DHTMLX/vue-gantt-demo

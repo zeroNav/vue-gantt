@@ -1,5 +1,5 @@
 {
-  "name": "vue-admin-demo",
+  "name": "vue-gantt",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Nooldey",
@@ -51,8 +51,7 @@
     "moment": "^2.19.2",
     "snapsvg": "^0.5.1",
     "vue": "^2.5.8",
-    "vue-router": "^2.8.1",
-    "vuex": "^2.5.0"
+    "vue-router": "^2.8.1"
   },
   "browserslist": "last 2 versions, safari >= 9",
   "engines": {
